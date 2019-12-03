@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="warmGrey">#939393</color>
+    <color name="warmPink">#e95c7b</color>
+    <color name="black1">#14151a</color>
+    <color name="black">#212121</color>
+    <color name="abu">#00ffffff</color>
+    <color name="abusemi">#f2f2f2</color>
+    <color name="pale_aqua">#d1eedd</color>
+    <color name="very_light_blue">#e1eef6</color>
+    <color name="tea">#5dc389</color>
+
+</resources>

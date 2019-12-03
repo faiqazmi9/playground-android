@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="216dp"
+                android:layout_height="32dp"
+                app:cardBackgroundColor="@color/abusemi"
+                app:cardCornerRadius="3dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:hint="Cari promo disini..."
+                        android:textColor="@color/warmGrey"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/serch" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/pale_aqua"
+                app:cardCornerRadius="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/sort_ascending" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:cardBackgroundColor="@color/very_light_blue"
+                app:cardCornerRadius="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/filtr" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:background="@color/abusemi"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                app:cardCornerRadius="3dp"
+                android:layout_marginBottom="12dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rel0"
+                        android:layout_width="106dp"
+                        android:layout_height="match_parent"
+                        android:background="#000000">
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/rel0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:id="@+id/golden"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Golden Monkey"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentTop="true"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/golden"
+                            android:layout_marginTop="2dp"
+                            android:text="Resto"
+                            android:textColor="@color/warmGrey"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/voc"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/placeholder_copy"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="0.5 KM"
+                                android:textSize="10sp"
+                                android:textColor="@color/warmGrey"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/shape_copy"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="4.5 (88 Reviews)"
+                                android:textSize="10sp"
+                                android:textColor="@color/warmGrey"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/voc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1 Voucher Available"
+                            android:textSize="10sp"
+                            android:textColor="@color/tea"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                app:cardCornerRadius="3dp"
+                android:layout_marginBottom="12dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rel1"
+                        android:layout_width="106dp"
+                        android:layout_height="match_parent"
+                        android:background="#000000">
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/rel1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:id="@+id/golden1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Golden Monkey"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentTop="true"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/golden1"
+                            android:layout_marginTop="2dp"
+                            android:text="Resto"
+                            android:textColor="@color/warmGrey"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/voc1"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/placeholder_copy"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="0.5 KM"
+                                android:textSize="10sp"
+                                android:textColor="@color/warmGrey"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/shape_copy"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="4.5 (88 Reviews)"
+                                android:textSize="10sp"
+                                android:textColor="@color/warmGrey"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/voc1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1 Voucher Available"
+                            android:textSize="10sp"
+                            android:textColor="@color/tea"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                app:cardCornerRadius="3dp"
+                android:layout_marginBottom="12dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rel2"
+                        android:layout_width="106dp"
+                        android:layout_height="match_parent"
+                        android:background="#000000">
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/rel2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:id="@+id/golden2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Golden Monkey"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentTop="true"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/golden2"
+                            android:layout_marginTop="2dp"
+                            android:text="Resto"
+                            android:textColor="@color/warmGrey"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/voc2"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/placeholder_copy"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="0.5 KM"
+                                android:textSize="10sp"
+                                android:textColor="@color/warmGrey"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/shape_copy"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="4.5 (88 Reviews)"
+                                android:textSize="10sp"
+                                android:textColor="@color/warmGrey"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/voc2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1 Voucher Available"
+                            android:textSize="10sp"
+                            android:textColor="@color/tea"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
